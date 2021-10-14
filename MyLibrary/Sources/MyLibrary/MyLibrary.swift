@@ -1,5 +1,8 @@
+
 import SwiftUI
+
 @available(iOS 15.0, *)
+
 public struct balanceToggle: View {
     @State var leftColor: Color
     @State var rightColor: Color
@@ -8,6 +11,7 @@ public struct balanceToggle: View {
     @State var leftTextColor: Color
     @State var rightTextColor: Color
     @State var isOn = false
+
     public var body: some View {
         HStack {
             RoundedRectangle(cornerRadius: 8)
@@ -33,8 +37,7 @@ public struct balanceToggle: View {
                         .font(.body)
                         .bold()
                         .foregroundColor(isOn ? rightTextColor : leftTextColor)
-                        .offset(x: isOn ? 30 : -30)
-                    
+                        .offset(x: isOn ? 30 : -30)                    
                 )
         }
         .frame(width: 115, height: 30)
