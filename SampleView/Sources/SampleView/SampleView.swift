@@ -1,10 +1,11 @@
 import SwiftUI
 
-@available(iOS 15.0, *)
+@available(iOS 13.0, *)
 public struct SampleView {
     var text = "Hello, World!"
 }
-@available(iOS 15.0, *)
+
+@available(iOS 13.0, *)
 public struct SampleListView: View {
     public init() {
         
