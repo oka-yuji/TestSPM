@@ -22,11 +22,11 @@ public struct balanceToggle: View {
                         .foregroundColor(Color.clear)
                 )
                 .overlay(
-                RoundedRectangle(cornerRadius: 8)
-                    .foregroundColor(isOn ? rightColor : leftColor)
-                    .frame(width: 55, height: 25)
-                    .offset(x: isOn ? 28 : -28)
-                    .animation(.easeInOut(duration: 0.2), value: isOn)
+                    RoundedRectangle(cornerRadius: 8)
+                        .foregroundColor(isOn ? rightColor : leftColor)
+                        .frame(width: 55, height: 25)
+                        .offset(x: isOn ? 28 : -28)
+                        .animation(.easeInOut(duration: 0.2), value: isOn)
                 )
                 .overlay(
                     Text(isOn ? rightText : leftText)
@@ -34,7 +34,7 @@ public struct balanceToggle: View {
                         .bold()
                         .foregroundColor(isOn ? rightTextColor : leftTextColor)
                         .offset(x: isOn ? 30 : -30)
-                
+                    
                 )
         }
         .frame(width: 115, height: 30)
